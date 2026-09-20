@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM SHOOT | คอร์สบาสเกตบอลฟรี 🏀</title>
+    
+    <link rel="stylesheet" href="styles.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;600;900&family=Orbitron:wght@500;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        html { scroll-behavior: smooth; }
+        
+        /* CSS เฉพาะสำหรับหน้านี้ (ถ้าจำเป็น) */
+        .course-detail-section { padding: 80px 0; }
+        .detail-content { max-width: 900px; margin: auto; }
+        .video-container { 
+            position: relative; 
+            padding-bottom: 56.25%; /* อัตราส่วน 16:9 */
+            height: 0; 
+            overflow: hidden; 
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .step-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 40px;
+            gap: 20px;
+        }
+        .step-number {#ff6600
+            font-size: 2.5em;
+            font-weight: 700;
+            color: #ff6600; /* สีส้มตามธีม */
+            line-height: 1;
+        }
+        .step-text h3 {
+            margin-top: 0;
+            color: #ff6600;
+        }
+        .detail-content h2 {
+            margin-bottom: 30px;
+            text-align: center;
+            color: #ff6600;
+        }
+/* ทำให้กล่องกติกา (step-item) ดูโดดเด่นขึ้นเวลา Hover */
+.step-item {
+    transition: all 0.3s ease;
+    border-left: 3px solid transparent;
+    padding-left: 15px;
+}
+
+.step-item:hover {
+    border-left: 3px solid #FF6B00; /* มีเส้นสีส้มโผล่มาด้านซ้าย */
+    background: rgba(255, 107, 0, 0.05); /* พื้นหลังส้มจางๆ */
+    transform: translateX(10px); /* เลื่อนขวาเล็กน้อย */
+}
+
+/* ปรับสีตัวเลขให้เป็นสีส้ม Neon */
+.step-number {
+    background-color: #FF6B00 !important;
+    box-shadow: 0 0 10px rgba(255, 107, 0, 0.5);
+    color: #000 !important;
+    font-weight: bold;
+}
+    </style>
+
+</head>
+<body>
+  <div class="tp-top-bar">
+    <div class="container-fluid tp-flex-center">
+        <a href="#home" class="tp-brand">
+            <img src="images/Tp.png" alt="TP Logo" class="tp-logo"> 
+            <span class="tp-text"><span class="tp-gold">TP</span> BASKETBALL</span>
+        </a>
+    </div>
+    </div>
+
+    <header class="sticky-header">
+        <div class="container-fluid header-content">
+            <div class="logo">
+                <a href="#home">PRO BASKETBALL 🏀</a>
+            </div>
+            <nav>
+                <a href="#courses-list">คอร์สเรียนทั้งหมด</a>
+                <a href="#why-us">ทำไมต้องเรียนกับเรา</a>
+                <a href="#community">ชุมชน</a>
+                <a href="#" class="btn-signup">START NOW</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="course-detail-section" id="form-shoot-course">
+        <div class="container detail-content">
+            
+            <a href="index.html#courses-list" style="color: #007bff; text-decoration: none; display: block; margin-bottom: 20px; font-size: 1em;">
+                &larr; กลับไปที่รายการคอร์ส
+            </a>
+            
+            <h1>หลักสูตร: Master Your Form Shoot</h1>
+            <p class="subtitle" style="font-size: 1.1em; color: #929292;">เรียนรู้ขั้นตอนการชู้ตที่ถูกต้อง ตั้งแต่เท้าจนถึงมือ เพื่อเพิ่มความแม่นยำของคุณ</p>
+            
+            <hr>
+
+            <h2>🎬 วิดีโอสอนหลัก (The Fundamentals)</h2>
+        <div class="video-container">
+            <iframe 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/6kuSmhqbC7k" 
+                title="ท่าชู้ตบาสเกตบอลพื้นฐาน" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+            <hr>
+            <h2>📚 ขั้นตอนการฝึก Form Shoot ที่สมบูรณ์แบบ</h2>
+            
+            <div class="step-item">
+                <div class="step-number">1</div>
+                <div class="step-text">
+                    <h3>ฐานที่มั่นคง (The Stance & Balance)</h3>
+                    <p>ยืนด้วยเท้าที่ถนัดอยู่ข้างหน้าเล็กน้อย (Staggered Stance) และให้หัวเข่าโค้งงอเล็กน้อย น้ำหนักตัวอยู่กึ่งกลางหรือค่อนไปทางปลายเท้าเล็กน้อยเพื่อเตรียมพร้อมสำหรับการกระโดด</p>
+                </div>
+            </div>
+
+            <div class="step-item">
+                <div class="step-number">2</div>
+                <div class="step-text">
+                    <h3>การวางลูกบาส (The Ball Placement)</h3>
+                    <p>วางลูกบาสบนปลายนิ้ว (Finger Pads) ของมือชู้ต มือประคอง (Guide Hand) วางอยู่ด้านข้าง ไม่สัมผัสลูกจากด้านล่างหรือด้านหน้า ข้อศอกของมือชู้ตชี้เข้าหาห่วง</p>
+                </div>
+            </div>
+
+            <div class="step-item">
+                <div class="step-number">3</div>
+                <div class="step-text">
+                    <h3>จังหวะการยก (The Dip and Lift)</h3>
+                    <p>ใช้จังหวะการย่อตัว (Dip) ก่อนชู้ตเล็กน้อยเพื่อสร้างโมเมนตัมในการส่งลูก การยกต้องเป็นจังหวะต่อเนื่อง (One-Motion หรือ Two-Motion) โดยให้ข้อมือพร้อมที่จะสะบัด</p>
+                </div>
+            </div>
+
+            <div class="step-item">
+                <div class="step-number">4</div>
+                <div class="step-text">
+                    <h3>การปล่อยลูกและการสะบัดข้อมือ (Release and Follow Through)</h3>
+                    <p>ปล่อยลูกที่จุดสูงสุดของการกระโดด (Jump Shot) หรือที่หน้าผาก (Set Shot) สะบัดข้อมือลง (Snap/Flick) อย่างรวดเร็ว โดยมือที่ชู้ตจบลงในท่า 'Goose Neck' (เหมือนกำลังล้วงคุกกี้ในโหลสูง)</p>
+                </div>
+            </div>
+            
+            <hr>
+
+            <h2>📹 แบบฝึกหัดเสริม: ทักษะการเลย์อัพ (Lay-up Skills)</h2>
+<div class="video-container">
+    <iframe 
+        width="100%" 
+        height="315" 
+        src="https://www.youtube.com/embed/FiwtFATECKs" 
+        frameborder="0" 
+        allowfullscreen>
+    </iframe>
+</div>
+            
+            <p style="text-align: center; margin-top: 30px; font-weight: bold;">พร้อมที่จะฝึกฝนแล้วหรือยัง? ใช้แบบฝึกหัดนี้ 100 ครั้งต่อวัน เพื่อสร้าง Muscle Memory ที่สมบูรณ์แบบ!</p>
+
+        </div>
+        <section class="course-detail-section">
+    <div class="container detail-content">    
+        <div class="skills-description">
+            <p class="highlight-text">การเลย์อัพคือการทำแต้มที่มีโอกาสหวังผลสูงที่สุดในบาสเกตบอล โดยการใช้จังหวะก้าวเข้าหาแป้นในระยะใกล้</p>
+            
+            <div class="step-box">
+                <h3><i class="fas fa-walking"></i> ขั้นตอนการทำเลย์อัพ (จังหวะ 0-1-2)</h3>
+                <ul>
+                    <li><strong>จังหวะที่ 0 (Gather):</strong> จังหวะที่มือทั้งสองข้างจับบอลแน่นเพื่อเตรียมก้าว</li>
+                    <li><strong>จังหวะที่ 1 (First Step):</strong> ก้าวเท้าข้างที่ถนัด (ถ้าเลย์ขวาให้ก้าวเท้าขวา) เป็นก้าวยาวเพื่อเข้าหาแป้น</li>
+                    <li><strong>จังหวะที่ 2 (Second Step):</strong> ก้าวเท้าอีกข้าง (เท้าซ้าย) เป็นก้าวสั้นเพื่อถีบตัวกระโดดขึ้นหาห่วง</li>
+                    <li><strong>จังหวะปล่อยบอล (The Finish):</strong> ยกเข่าข้างที่ถนัดขึ้นพร้อมส่งบอลขึ้นไปวางที่มุมสี่เหลี่ยมบนแป้น</li>
+                </ul>
+            </div>
+</section>
+    </section>
+    
+<footer>
+        <div class="container footer-content">
+        <div class="footer-info">
+            <h4 class="gold-text">โรงเรียนทุ่งศุขลาพิทยา "กรุงไทยอนุเคราะห์"</h4>
+            <p>217 หมู่ที่ 11 ตำบลทุ่งสุขลา</p>
+            <p>อำเภอศรีราชา จังหวัดชลบุรี รหัสไปรษณีย์ 20230</p>
+       <div class="contact-item">
+    <p><span>โทรศัพท์:</span> 038-350456</p>
+    <p><span>โทรสาร:</span> 038-350499</p>
+    <p><span>เว็บไซต์:</span> <a href="http://www.thungsukla.ac.th" target="_blank">www.thungsukla.ac.th</a></p>
+    <p><span>อีเมล:</span> tp@thungsukla.ac.th</p>
+    
+<div class="footer-social">
+    <a href="https://www.facebook.com/thungsuklaschool/" class="social-circle fb" title="Facebook">
+        <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://www.youtube.com/channel/UCyp8DPc_yN7KL71vVPnsG0A?view_as=subscriber" class="social-circle yt" title="YouTube">
+        <i class="fab fa-youtube"></i>
+    </a>
+</div>
+</div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <p>&copy; 2026 <span class="tp-gold">TP</span> BASKETBALL | จัดทำโดยนักเรียนชั้นมัธยมศึกษาปีที่ 5/3</p>
+        </div>
+    </div>
+    
+<div class="footer-bottom">
+    <div class="container">
+        <p>&copy; All Right Reserved 2026 <span class="highlight-coder">New Gen coder</span></p>
+    </div>
+</div>
+
+    </footer>
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<script>
+    // 2. ตั้งค่าการเคลื่อนไหว
+    const sr = ScrollReveal({
+        origin: 'bottom', // ให้เด้งมาจากด้านล่าง
+        distance: '50px', // ระยะการเคลื่อนที่ 50px
+        duration: 1000,   // ใช้เวลา 1 วินาที
+        delay: 200,       // รอ 0.2 วินาทีก่อนเริ่ม
+        reset: false      // เล่นรอบเดียวพอ (เพื่อความลื่นไหล)
+    });
+
+    // 3. กำหนดว่าจะให้อันไหนเด้งบ้าง
+    sr.reveal('.detail-content h1', {}); // หัวข้อใหญ่
+    sr.reveal('.detail-content h2', { delay: 300 }); // หัวข้อรอง
+    sr.reveal('.video-container', { delay: 400 }); // วิดีโอ
+    
+    // กติกา/อุปกรณ์แต่ละข้อ (ให้เด้งต่อเนื่องกันแบบ Interval)
+    sr.reveal('.step-item', { interval: 200 }); 
+    
+    sr.reveal('hr', { width: '0%', duration: 2000 }); // เส้นคั่น
+</script>
+</body>
+</html>
